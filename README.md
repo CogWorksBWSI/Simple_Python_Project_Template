@@ -2,13 +2,13 @@
 
 The basics of creating an installable Python package.
 
-To install this package, in the same directory as `setup.py` run the command:
+To install this package first activate the appropriate conda environment, then, in the same directory as `setup.py` run the command:
 
 ```shell
 pip install -e .
 ```
 
-This will install `example_project` in your Python environment. You can now use it as:
+This will install `example_project` in your Python environment as an "editable" installation (hence the `-e`). This means that you can edit the project's source files, and those changes will manifest without you needing to reinstall `example_project`. You can now use it as:
 
 ```python
 from example_project import returns_one
